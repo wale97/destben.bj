@@ -34,18 +34,31 @@ use App\Http\Controllers\BibliothequeController;
 
 
 Route::get('bibliotheque',[BibliothequeController::class, 'biblio'])->name('biblio');
+
 Route::get('/',[HomeController::class, 'index'])->name('home');
+
 Route::get('restaurants',[RestaurantsController::class, 'restau'])->name('restau');
+
 Route::get('contact',[ContactController::class, 'contact'])->name('contact');
+
 Route::get('decouvrir',[DecouvrirController::class, 'decouvrir'])->name('decouvrir');
+
 Route::get('disclaimer',[DisclaimerController::class, 'disclaimer'])->name('disclaimer');
+
 Route::get('visiter',[VisiterController::class, 'visiter'])->name('visiter');
+
 Route::get('streetfood',[StreetfoodController::class, 'streetfood'])->name('streetfood');
+
 Route::get('ctnbynight',[CtnbynightController::class, 'ctnbynight'])->name('ctnbynight');
+
 Route::get('pleinair',[PleinairController::class, 'pleinair'])->name('pleinair');
+
 Route::get('faq',[FaqController::class, 'faq'])->name('faq');
+
 Route::get('sortir',[SortirController::class, 'sortir'])->name('sortir');
+
 Route::get('dormir',[DormirController::class, 'dormir'])->name('dormir');
+
 Route::get('test',[TestController::class, 'test'])->name('test');
 
 
@@ -63,6 +76,7 @@ Route::get('/new/{id}', [NewsController::class, 'voir_news'])->name('voir-news')
 
 //Contact Page
 Route::get('contact', [ContactController::class, 'contacter'])->name('contacter');
+
 Route::post('contact', [ContactController::class, 'envoi'])->name('contact.envoi');
 
 
